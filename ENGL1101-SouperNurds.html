@@ -66,7 +66,12 @@ body{
   overflow-y: auto;
   display: flex;
   flex-direction: column-reverse;
-  
+  -ms-overflow-style: none; /* Edge, Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+}
+
+.storyContainer:: -webkit-scrollbar {
+display: none; /* Chrome, Safari, Opera */
 }
 
 .storyText{
